@@ -25,7 +25,7 @@ namespace Camera.Hikvision.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("8000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string port1 {
             get {
                 return ((string)(this["port1"]));
@@ -133,7 +133,7 @@ namespace Camera.Hikvision.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.0.0.64")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string ip {
             get {
                 return ((string)(this["ip"]));
@@ -145,7 +145,7 @@ namespace Camera.Hikvision.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("admin")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string name {
             get {
                 return ((string)(this["name"]));
@@ -157,7 +157,7 @@ namespace Camera.Hikvision.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123456")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Password {
             get {
                 return ((string)(this["Password"]));
