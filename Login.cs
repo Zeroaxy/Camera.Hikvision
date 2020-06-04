@@ -221,26 +221,31 @@ namespace PreviewDemo
         private void btnPreview_Click(object sender, EventArgs e)
         {            
 
-            if (btnPreview_press)
-            {
-                View.Show();
-                View.Activate();
-                btnPreview_press = false;
-            }
-            else
-            {
-                //View.Close();
-                View.Activate();
-                btnPreview_press = true;
-            }
+            //if (btnPreview_press)
+            //{
+            //    View.Show();
+            //    View.Activate();
+            //    btnPreview_press = false;
+            //}
+            //else
+            //{
+            //    //View.Close();
+            //    View.Activate();
+            //    btnPreview_press = true;
+            //}
 
             Int32 userID_and=0;
             foreach (Int32 key in m_lUserID) {userID_and += key;}
 
-            if (userID_and==-9)
+            if (userID_and == -9)
             {
                 MessageBox.Show("Please login the device firstly");
                 return;
+            }
+            else
+            {
+                View.Show();
+                View.Activate();
             }
 
             lpPreviewInfo = new CHCNetSDK.NET_DVR_PREVIEWINFO();
@@ -320,7 +325,7 @@ namespace PreviewDemo
 
         private void btnJPEG_Click(object sender, EventArgs e)
         {
-            bool res=true;
+            bool res= false;
             string[] numbers = textBox10.Text.Trim().Split(',');
 
             for (int i = 0; i< numbers.Length; i++)
@@ -332,7 +337,9 @@ namespace PreviewDemo
                     {
                         res = false;
                     }
-                }                    
+                    else
+                        res = true; 
+                }
             }
             if(res)
                 MessageBox.Show("Successful,Storage in "+ "D:\\Capture_JPEG");
